@@ -1,18 +1,23 @@
-local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua", true))()
 local window = DrRayLibrary:Load("DrRay", "Default")
 local tab = DrRayLibrary.newTab("", "ImageIdHere")
 
-tab.newButton("Buttons", "Prints Hello!", function()
-    print('Hello!')
+tab.newButton("Create M1 Reset&Emote Dash", "CLICK ONE TIME ONLY!", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Slaphello/M1-Reset-Emote-Dash-TSB/refs/heads/main/M1%20Reset%20%26%20Emote%20Dash%20TSB", true))()
 end)
 
-tab.newToggle("Toggle", "Toggle! (prints the state)", true, function(toggleState)
-    if toggleState then
-        print("On")
+tab.newToggle("Hide/Show Buttons", "Hide/Show Buttons", true, function(Hide/Show)
+    if Hide/Show then
+        HideButton = true
     else
-        print("Off")
+        HideButton = false
     end
 end)
+
+
+
+
+
 
 
 
